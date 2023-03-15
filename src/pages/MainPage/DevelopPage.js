@@ -2,7 +2,7 @@ import React from 'react'
 import {Link} from 'react-router-dom';
 import thumbGuitar from '../../images/thumb_guitar.png'
 
-function MainPage() {
+function DevelopPage() {
   let name="튜레이브";
   let date="2022.03.02";
   let classTitle="하루 10분 취미로 시작하는 어쿠스틱 기타";
@@ -24,4 +24,4 @@ function MainPage() {
 
 }
 
-export default MainPage
+export default DevelopPage

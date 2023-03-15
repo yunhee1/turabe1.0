@@ -1,14 +1,14 @@
 import React from 'react';
 import './App.css';
-import { Route, Routes, Link } from "react-router-dom";
-import MainPage from './pages/MainPage/MainPage';
+import { Route, Routes } from "react-router-dom";
 import DetailPage from './pages/DetailPage/DetailPage';
+import MainHeader from './components/MainHeader';
 
 function App() {
   return (
     <div>
     <Routes>
-      <Route path="/" element={<MainPage />} />
+      <Route path="/" element={<MainHeader />} />
       <Route path="/detail" element={<DetailPage />} />
     </Routes>
     </div>
