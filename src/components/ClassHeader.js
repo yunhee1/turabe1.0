@@ -1,19 +1,50 @@
 import React from 'react'
-import {Link} from 'react-router-dom';
+import Col from 'react-bootstrap/Col';
+import ListGroup from 'react-bootstrap/ListGroup';
+import Row from 'react-bootstrap/Row';
+import Tab from 'react-bootstrap/Tab';
 
-function ClassHeader() {
+
+import DetailPage from '../pages/DetailPage/DetailPage';
+import CurriculumPage from '../pages/DetailPage/CurriculumPage';
+
+
+function MainHeader() {
+
   return (
-    <div>
-      <Link to="/">튜레이브</Link>
-      <ul>
-        <li> <Link to="/">인기 카테고리</Link></li>
-        <li> <Link to="/">개발</Link></li>
-        <li> <Link to="/">라이프스타일</Link></li>
-        <li> <Link to="/">크리에이티브</Link></li>
-        <li> <Link to="/">재테크</Link></li>
-      </ul>
-     </div>
-  )
+    <div className='tabMenu'>
+    <Tab.Container id="list-group-tabs-example" defaultActiveKey="#link1">
+      <Row>
+        <Col sm={3}>
+          <ListGroup className='list'>
+            <ListGroup.Item action href="#link1">
+              클래스 소개
+            </ListGroup.Item>
+
+            <ListGroup.Item action href="#link2">
+              커리큘럼
+            </ListGroup.Item>
+            
+          </ListGroup>
+        </Col>
+
+        <Col sm={8}>
+          <Tab.Content>
+            <Tab.Pane eventKey="#link1">
+              <DetailPage />
+            </Tab.Pane>
+
+             <Tab.Pane eventKey="#link2">
+              <CurriculumPage />
+            </Tab.Pane>
+
+  
+          </Tab.Content>
+        </Col>
+      </Row>
+    </Tab.Container>
+    </div>
+  );
 }
 
-export default ClassHeader
+export default MainHeader;

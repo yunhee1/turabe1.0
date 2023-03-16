@@ -11,13 +11,15 @@ import SelfdevelopPage from '../pages/MainPage/SelfdevelopPage';
 import InvestPage from '../pages/MainPage/InvestPage';
 import CreativePage from '../pages/MainPage/CreativePage';
 
+
+
 function MainHeader() {
 
   return (
     <div className='tabMenu'>
     <Tab.Container id="list-group-tabs-example" defaultActiveKey="#link1">
       <Row>
-        <Col sm={4}>
+        <Col sm={3}>
           <ListGroup className='list'>
             <ListGroup.Item action href="#link1">
               인기 카테고리
@@ -28,7 +30,7 @@ function MainHeader() {
             </ListGroup.Item>
             
             <ListGroup.Item action href="#link3">
-              
+              라이프스타일
             </ListGroup.Item>
 
             <ListGroup.Item action href="#link4">
