@@ -1,6 +1,7 @@
 import Container from 'react-bootstrap/Container';
 import Navbar from 'react-bootstrap/Navbar';
 import logo from '../images/turabe_logo.png';
+import TestHeader from './TestHeader';
 
 function Logo() {
     const logoStyle={

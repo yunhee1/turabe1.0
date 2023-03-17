@@ -17,9 +17,8 @@ import money from '../images/money.png';
 
 function TestHeader() {
     const buttonStyle={
-        width : '150px',
+        width : '250px',
         backgroundColor : '#242424',
-
     }
     const iconStyle={
         width:'25px',
@@ -37,31 +36,31 @@ function TestHeader() {
         </Nav.Link>
     </Nav.Item>
 
-    <Nav.Item>
+    <Nav.Item style={buttonStyle}>
       <Nav.Link onClick={() => settab(1) } eventKey="link1">
       <img src={computer} alt = '' style={iconStyle} ></img>개발
         </Nav.Link>
     </Nav.Item>
     
-    <Nav.Item>
+    <Nav.Item style={buttonStyle}>
       <Nav.Link onClick={() => settab(2) } eventKey="link2">
       <img src={lifestyle} alt = '' style={iconStyle} ></img>라이프스타일
         </Nav.Link>
     </Nav.Item>
     
-    <Nav.Item>
+    <Nav.Item style={buttonStyle}>
       <Nav.Link onClick={() => settab(3) } eventKey="link3">
       <img src={creative} alt = '' style={iconStyle} ></img>크리에이티브
         </Nav.Link>
     </Nav.Item>
 
-    <Nav.Item>
+    <Nav.Item style={buttonStyle}>
         <Nav.Link onClick={() => settab(4) } eventKey="link4">
         <img src={pencil} alt = '' style={iconStyle} ></img>자기계발
         </Nav.Link>
     </Nav.Item>
 
-    <Nav.Item>
+    <Nav.Item style={buttonStyle}>
 
         <Nav.Link onClick={() => settab(5) } eventKey="link5">
         <img src={money} alt = '' style={iconStyle} ></img>재테크

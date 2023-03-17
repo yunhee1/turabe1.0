@@ -1,0 +1,15 @@
+.logoName{
+
+    font-family: 'Cafe24 Ssurround';
+    font-style: normal;
+    font-weight: 700;
+    font-size: 25px;
+    letter-spacing: -0.336005px;
+    color: #F5F4F3;
+}
+
+.nav flex-column nav nav-tabs{
+    width:250px!important;
+    background-color: #242424;
+    height: 100% !important;
+}
