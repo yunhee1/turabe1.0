@@ -1,16 +1,15 @@
-import React from 'react'
+import React , {useState} from 'react'
 import Col from 'react-bootstrap/Col';
 import ListGroup from 'react-bootstrap/ListGroup';
 import Row from 'react-bootstrap/Row';
 import Tab from 'react-bootstrap/Tab';
 
-
 import DetailPage from '../pages/DetailPage/DetailPage';
 import CurriculumPage from '../pages/DetailPage/CurriculumPage';
 
 
-function MainHeader() {
-
+function ClassHeader() {
+    let [tab, settab] = useState(0)
   return (
     <div className='tabMenu'>
     <Tab.Container id="list-group-tabs-example" defaultActiveKey="#link1">
@@ -47,4 +46,5 @@ function MainHeader() {
   );
 }
 
-export default MainHeader;
+
+export default ClassHeader;

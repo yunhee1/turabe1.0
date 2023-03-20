@@ -14,7 +14,6 @@ import creative from '../images/creative.png';
 import pencil from '../images/pencil.png';
 import money from '../images/money.png';
 
-
 function TestHeader() {
     const buttonStyle={
         width : '250px',
@@ -28,8 +27,9 @@ function TestHeader() {
     let [tab, settab] = useState(0);
 
   return (
-    <div>
-    <Nav className= "nav flex-column" variant="tabs" defaultActiveKey="link0">
+    <div style = {{display: 'flex', backgroundColor:'#242424'}}>
+      <div style={{width:'250px', height:'100%'}}>
+    <Nav style={{width:'250px'}} className= "nav flex-column" variant="tabs" defaultActiveKey="link0">
     <Nav.Item style={buttonStyle}>
       <Nav.Link onClick={() => settab(0) } eventKey="link0">
         <img src={fire} alt = '' style={iconStyle} ></img>인기 카테고리
@@ -68,9 +68,9 @@ function TestHeader() {
     </Nav.Item>
   </Nav>
 
-
-
-  <TabContent tab={tab}/>
+{/* 여기부터 컨텐츠 */}
+  </div>
+  <TabContent tab={tab} style={{backgroundColor:'#E5E5E5'}}/>
   </div>
    )
 }

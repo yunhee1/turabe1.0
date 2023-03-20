@@ -84,8 +84,10 @@ function MainPage() {
     height:'25px'
 };
   
+var titles = ['인기클래스', '웹개발','python','디지털 드로잉', '스타트업', '마케팅'];
+
   return (
-    <div >
+    <div style={{backgroundColor:'white'}}>
       <h1 style={menutitleStyle}><img src={fire} alt = '' style={iconStyle} ></img>인기클래스</h1>
     <div className="container">
   <div className="row row-cols-3">
