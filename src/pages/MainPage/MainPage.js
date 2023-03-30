@@ -72,10 +72,12 @@ function MainPage() {
 
 //왼족 내브바와 동일한 타이틀
   const menutitleStyle={
+    marginLeft:"20px",
+    marginBottom:"20px",
     fontWeight: '700',
     fontSize: '17px',
     lineHeight: '30px',
-    color: '#7a7a7a'
+    color: '#000000'
   }
 
   //글자 앞에 들어가는 아이콘
@@ -88,6 +90,7 @@ var titles = ['인기클래스', '웹개발','python','디지털 드로잉', '�
 
   return (
     <div style={{backgroundColor:'white'}}>
+      {/* 클레스 제목 */}
       <h1 style={menutitleStyle}><img src={fire} alt = '' style={iconStyle} ></img>인기클래스</h1>
     <div className="container">
   <div className="row row-cols-3">
